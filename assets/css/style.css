@@ -1,0 +1,30 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfcf8;
+}
+
+/* 🌈 Hero Section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(135deg, #a8dadc, #f9dcc4, #f1faee);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🧭 Navbar Styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* 💬 Footer */
+footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}

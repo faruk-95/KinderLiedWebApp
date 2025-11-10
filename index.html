@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KinderLied WebApp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KinderLied WebApp</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>Hallo Robert 👋</h1>
-    <p>Git setup successfull!</p>
-    <p>Frontend branch aktiv – Faruk test</p>
+  <!-- 🧭 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">KinderLied</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Songs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🌈 Hero Section -->
+  <header class="hero text-center text-white d-flex align-items-center justify-content-center">
+    <div>
+      <h1 class="display-4 fw-bold">Welcome to KinderLied</h1>
+      <p class="lead">Discover joyful songs and stories for kids!</p>
+      <a href="#" class="btn btn-warning btn-lg mt-3">Explore Songs</a>
+    </div>
+  </header>
+
+  <!-- 💬 Footer -->
+  <footer class="bg-light text-center py-3 mt-5 border-top">
+    <p class="mb-0 small text-muted">© 2025 KinderLied WebApp | Made by Faruk & Robert</p>
+  </footer>
+
+  <!-- Bootstrap JS (bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
