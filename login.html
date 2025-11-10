@@ -4,20 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login | KinderLied</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="bg-light">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="index.html">KinderLied</a>
-    </div>
-  </nav>
-
-  <div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 80vh;">
-    <div class="card shadow p-4" style="max-width: 400px; width: 100%;">
-      <h3 class="text-center mb-3">Login</h3>
+  <!-- Login Form Section -->
+  <section class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-sm p-4" style="width: 360px;">
+      <h3 class="text-center mb-3 text-primary">Login</h3>
 
       <form>
         <div class="mb-3">
@@ -33,15 +32,16 @@
         <button type="submit" class="btn btn-primary w-100">Login</button>
       </form>
 
-      <p class="text-center mt-3">
-        Don’t have an account? <a href="register.html">Register</a>
+      <p class="text-center mt-3 small">
+        Don’t have an account? <a href="register.html" class="text-decoration-none">Register</a>
       </p>
     </div>
-  </div>
+  </section>
 
-  <footer class="text-center text-muted mt-5 mb-3">
-    <small>© 2025 KinderLied WebApp | Made by Faruk & Robert</small>
-  </footer>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Include Navbar & Footer -->
+  <script src="assets/js/include.js"></script>
 </body>
 </html>
+
