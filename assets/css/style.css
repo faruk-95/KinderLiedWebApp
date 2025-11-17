@@ -1,9 +1,10 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #fdfcf8;
+  margin: 0;
 }
 
-/*  Hero Section */
+/* 🌈 Hero Section */
 .hero {
   height: 80vh;
   background: linear-gradient(135deg, #a8dadc, #f9dcc4, #f1faee);
@@ -17,14 +18,15 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/*  Navbar Styling */
+/* 🧭 Navbar Styling */
 .navbar-brand {
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
 
-/*  Footer */
+/* 💬 Footer */
 footer {
   background-color: #f8f9fa;
   color: #6c757d;
+  border-top: 1px solid #ddd;
 }

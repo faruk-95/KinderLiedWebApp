@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | KinderLied</title>
+  <title>Admin Panel | KinderLied</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="bg-light">
@@ -43,35 +40,33 @@
 </nav>
 
 
+  <div class="container">
 
+    <h1 class="mb-4">Admin Dashboard</h1>
 
+    <div class="row g-4">
 
-  <!-- Login Section -->
-  <section class="d-flex justify-content-center align-items-center" style="min-height: 100vh; background-color: #fdfcf8;">
-    <div class="card shadow-sm p-4" style="width: 360px;">
-      <h3 class="text-center mb-3 text-primary">Login</h3>
-
-      <form>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      <div class="col-md-6">
+        <div class="card shadow-sm p-3">
+          <h4>Songs verwalten</h4>
+          <p>Lieder hinzufügen, bearbeiten oder löschen.</p>
+          <a href="#" class="btn btn-primary">Songs bearbeiten</a>
         </div>
+      </div>
 
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+      <div class="col-md-6">
+        <div class="card shadow-sm p-3">
+          <h4>Stories verwalten</h4>
+          <p>Geschichten hinzufügen, bearbeiten oder löschen.</p>
+          <a href="#" class="btn btn-primary">Stories bearbeiten</a>
         </div>
+      </div>
 
-        <button type="submit" class="btn btn-primary w-100">Login</button>
-      </form>
-
-      <p class="text-center mt-3 small">
-        Don’t have an account? <a href="register.html" class="text-decoration-none">Register</a>
-      </p>
     </div>
-  </section>
 
-  <!-- Bootstrap JS -->
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

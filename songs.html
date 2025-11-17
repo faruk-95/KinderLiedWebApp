@@ -5,248 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Songs – Hörproben</title>
 
-    <!-- BOOTSTRAP CSS -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
-        <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
 
-            <!-- 👇 Home-Button / Startscreen-Link -->
-            <a class="navbar-brand" href="index.html">KinderLied WebApp</a>
+    <a class="navbar-brand fw-bold text-primary" href="index.html">KinderLied</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
 
-                    <!-- 👇 eigener Home-Link (wie Startseite) -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="songs.html">Songs</a></li>
+        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="songs.html">Songs</a>
-                    </li>
+        <!-- Admin Panel -->
+        <li class="nav-item">
+          <a class="nav-link text-danger fw-bold" href="admin/dashboard.html">Admin Panel</a>
+        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="stories.html">Stories</a>
-                    </li>
+      </ul>
+    </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                </ul>
-            </div>
+  </div>
+</nav>
 
-        </div>
-    </nav>
 
-    <!-- Hauptinhalt -->
+
+
+    <!-- MAIN -->
     <div class="container mb-5">
-
         <h1 class="mb-4 text-center">🎵 Hörproben der Kinderlieder</h1>
-
-        <p class="text-center mb-5">
-            Wähle ein Lied aus und höre dir die Hörprobe an.
-        </p>
+        <p class="text-center mb-5">Wähle ein Lied aus und höre dir die Hörprobe an.</p>
 
         <div class="row g-4">
 
-            <!-- Song 1 -->
+            <!-- 1: Wer ist da? -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song1.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/wer_ist_da.png" class="card-img-top" alt="Wer ist da?">
                     <div class="card-body">
                         <h5 class="card-title">Wer ist da?</h5>
-                        <p class="card-text"></p>
                         <audio controls class="w-100">
-                            <source src="c:\Users\rober\Desktop\AAAAA\Clips\Wer_ist_da.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/Wer_ist_da.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
 
-            <!-- Song 2 -->
+            <!-- 2: Was ist Rot? -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/was_ist_rot.png" class="card-img-top" alt="Was ist Rot?">
                     <div class="card-body">
                         <h5 class="card-title">Was ist Rot?</h5>
-                        <p class="card-text">Ein Lied über die Farben.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/was_ist_rot.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
 
-            <!-- Song 3 -->
+            <!-- 3: Hüpfen -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song3.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/verben_huepfen.png" class="card-img-top" alt="Hüpfen">
                     <div class="card-body">
                         <h5 class="card-title">Lied von den Verben (Hüpfen)</h5>
-                        <p class="card-text">Lied von den Verben (HÜpfen)</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/tanzlied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/huepfen.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
 
-            <!-- Song 4 -->
+            <!-- 4: Laufen -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/verben_laufen.png" class="card-img-top" alt="Laufen">
                     <div class="card-body">
                         <h5 class="card-title">Lied von den Verben (Laufen)</h5>
-                        <p class="card-text">Eine ruhige Hörprobe zum Einschlafen.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/laufen.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
 
-            <!-- Song 5 -->
+            <!-- 5: Gehen -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/verben_gehen.png" class="card-img-top" alt="Gehen">
                     <div class="card-body">
                         <h5 class="card-title">Lied von den Verben (Gehen)</h5>
-                        <p class="card-text">Eine ruhige Hörprobe zum Einschlafen.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/gehen.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
-            
-            <!-- Song 6 -->
+
+            <!-- 6: Teil 2 -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/verben_teil2.png" class="card-img-top" alt="Teil 2">
                     <div class="card-body">
                         <h5 class="card-title">Lied von den Verben (Teil 2)</h5>
-                        <p class="card-text">Eine ruhige Hörprobe zum Einschlafen.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/teil2.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
-            
-            <!-- Song 7 -->
+
+            <!-- 7: Dinolied -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/dinolied.png" class="card-img-top" alt="Dinolied">
                     <div class="card-body">
                         <h5 class="card-title">Dinolied</h5>
-                        <p class="card-text">Eine ruhige Hörprobe zum Einschlafen.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/dinolied.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
-            
-            <!-- Song 8 -->
+
+            <!-- 8: Spiel mit mir -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/spiel_mit_mir.png" class="card-img-top" alt="Spiel mit mir!">
                     <div class="card-body">
                         <h5 class="card-title">Spiel mit mir!</h5>
-                        <p class="card-text">Eine ruhige Hörprobe zum Einschlafen.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/spiel_mit_mir.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
-            
-            <!-- Song 9 -->
+
+            <!-- 9: Anziehsong -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/anziehsong.png" class="card-img-top" alt="Anziehsong">
                     <div class="card-body">
                         <h5 class="card-title">Anziehsong</h5>
-                        <p class="card-text">Eine ruhige Hörprobe zum Einschlafen.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/anziehsong.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
-            
-            <!-- Song 10 -->
+
+            <!-- 10: Ich fürchte mich so -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/ich_fuerchte_mich_so.png" class="card-img-top" alt="Ich fürchte mich so!">
                     <div class="card-body">
                         <h5 class="card-title">Ich fürchte mich so!</h5>
-                        <p class="card-text">Eine ruhige Hörprobe zum Einschlafen.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/ich_fuerchte_mich_so.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
-            
-            <!-- Song 11 -->
+
+            <!-- 11: Ich gehe in den Kindergarten -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/ich_gehe_in_den_kindergarten.png" class="card-img-top" alt="Ich gehe in den Kindergarten">
                     <div class="card-body">
                         <h5 class="card-title">Ich gehe in den Kindergarten</h5>
-                        <p class="card-text">Eine ruhige Hörprobe zum Einschlafen.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/ich_gehe_in_den_kindergarten.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
-            
-            <!-- Song 12 -->
+
+            <!-- 12: Wir lesen alle -->
             <div class="col-12 col-md-4">
                 <div class="card shadow-sm h-100">
-                    <img src="assets/images/song2.jpg" class="card-img-top" alt="Song Bild">
+                    <img src="assets/images/wir_lesen_alle.png" class="card-img-top" alt="Wir lesen alle!">
                     <div class="card-body">
                         <h5 class="card-title">Wir lesen alle!</h5>
-                        <p class="card-text">Eine ruhige Hörprobe zum Einschlafen.</p>
                         <audio controls class="w-100">
-                            <source src="assets/audio/schlaflied.mp3" type="audio/mpeg">
-                            Dein Browser unterstützt den Audio-Player nicht.
+                            <source src="assets/audio/wir_lesen_alle.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
     <!-- Bootstrap JS -->
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
