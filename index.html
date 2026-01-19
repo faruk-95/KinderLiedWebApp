@@ -7,13 +7,36 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Zusätzliche Styles nur für Hintergrund -->
+  <style>
+    .hero {
+      background: url("assets/images/hero-bg.jpg") no-repeat center center;
+      background-size: cover;
+      min-height: 60vh;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero > div {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 </head>
 
 <body>
 
- <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container">
 
     <a class="navbar-brand fw-bold text-primary" href="index.html">KinderLied</a>
@@ -31,7 +54,6 @@
         <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
         <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
 
-        <!-- Admin Panel -->
         <li class="nav-item">
           <a class="nav-link text-danger fw-bold" href="admin/dashboard.html">Admin Panel</a>
         </li>
@@ -42,24 +64,81 @@
   </div>
 </nav>
 
+<!-- Hero Section mit Bild -->
+<header class="hero text-center text-white d-flex align-items-center justify-content-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Wer ist da?</h1>
+    <p class="lead">Kinderlieder für die Sprachförderung</p>
+    <a href="songs.html" class="btn btn-warning btn-lg mt-3">Hörproben</a>
+  </div>
+</header>
 
+<!-- Grüner Inhaltsbereich -->
+<section class="bg-success text-white py-5">
+  <div class="container">
+    <div class="row text-center g-4">
 
+      <div>
+        <h2 class="fw-bold">Sprachförderung</h2>
+        <p>
+          „Wer ist da?“ ist eine praxisnahe Sammlung von Kinderliedern, die gezielt zur Sprachförderung und zum Sprachtraining im Kindergarten- und Vorschulalter eingesetzt werden kann. Entstanden aus der täglichen pädagogischen Arbeit, verbindet das Buch Musik, Sprache und Bewegung zu einem ganzheitlichen Lernansatz. Die Lieder greifen zentrale Themen der frühen Sprachentwicklung auf: Begrüßung und Kennenlernen, Farben, Verben, Gefühle, Kleidung, Angstbewältigung, soziale Interaktion und die Freude am Lesen. Jedes Lied wird von didaktischen Überlegungen begleitet und zeigt konkret, welche sprachlichen Kompetenzen gefördert werden – von Wortschatz und Satzbau über Aussprache und Mundmotorik bis hin zu Textverständnis und emotionaler Selbstregulation. Die Stärke dieses Buches liegt in seiner unmittelbaren Anwendbarkeit: Die Lieder sind einfach aufgebaut, flexibel gestaltbar und sprechen Kinder unterschiedlicher sprachlicher Vorerfahrungen an, auch mehrsprachige Gruppen. Musik wird hier als Türöffner genutzt, um Sprache spielerisch, wiederholend und sinnlich erfahrbar zu machen. „Wer ist da?“ richtet sich an Pädagoginnen und Pädagogen, Sprachförderkräfte sowie Eltern, die Kinder im Spracherwerb unterstützen möchten. Ein wertvolles Arbeitsmittel für Kindergärten und Vorschulen, das Lernen, Freude und Gemeinschaft auf natürliche Weise verbindet.
+        </p>
+      </div>
 
-  <!-- Hero Section -->
-  <header class="hero text-center text-white d-flex align-items-center justify-content-center">
-    <div>
-      <h1 class="display-4 fw-bold">Welcome to KinderLied</h1>
-      <p class="lead">Discover joyful songs and stories for kids!</p>
-      <a href="songs.html" class="btn btn-warning btn-lg mt-3">Explore Songs</a>
+      <div>
+  <h2 class="fw-bold text-center mb-4">Über mich</h2>
+
+  <div class="row align-items-center g-4">
+    
+    <!-- Text -->
+    <div class="col-md-8 text-start">
+      <p>
+        Mein Name ist Karin Ritzmeier-Stocker und bin seit 1994 als Elementarpädagogin in Wien tätig.
+        Nach meinem Wechsel in die Sprachförderung habe ich begonnen, eigene Lieder zu schreiben,
+        um Kinder beim Erwerb der deutschen Sprache zu unterstützen. In meiner pädagogischen Arbeit
+        zeigte sich, dass Musik besonders Kinder mit Deutsch als Zweitsprache begeistert und motiviert.
+        Im Jahr 2025 machte ich meine Lieder über gängige Internetplattformen einer breiten Öffentlichkeit
+        zugänglich. Mit dem dazugehörigen Begleitbuch, das zahlreiche praktische Tipps und Anregungen für
+        die pädagogische Praxis bietet, veröffentliche ich mein erstes Werk für die Arbeit mit Kindern im Kindergarten.
+      </p>
     </div>
-  </header>
 
-  <!-- Footer -->
-  <footer class="bg-light text-center py-3 border-top">
-    <p class="mb-0 small text-muted">© 2025 KinderLied WebApp | Made by Faruk & Robert</p>
-  </footer>
+    <!-- Foto -->
+    <div class="col-md-4 text-center">
+      <img 
+        src="css/images/Karin-Foto.png"
+        alt="Karin Ritzmeier-Stocker"
+        class="img-fluid rounded shadow"
+      >
+    </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+  </div>
+    <div>
+      <h2 class="fw-bold">Wie finde ich die Lieder?</h2>
+      <p>
+        Die Lieder sind sowohl auf Spotify als auch auf Amazon verfügbar. 
+      </p>
+      <div class="d-flex flex-column flex-md-row gap-3 mt-3 justify-content-center">
+        <a href="https://www.amazon.de/s?k=wer+ist+da+ritzmeier-stocker&__mk_de_DE=ÅMÅŽÕÑ&crid=2LBTTO17MWI69&sprefix=wer+ist+da+ritzmeier-stocker%2Caps%2C101&ref=nb_sb_noss_1" target="_blank" class="btn btn-warning fw-bold">
+          Link zu Amazon
+        </a>
+
+         <a href="https://open.spotify.com/intl-de/album/5WHO6cQUSb44RhFGGea4uN" target="_blank" class="btn btn-warning fw-bold">
+          Link zu Spotify
+         </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-3 border-top">
+  <p class="mb-0 small text-muted">© 2025 KinderLied WebApp | Made by Faruk & Robert</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
